@@ -5,7 +5,7 @@ import VisibleTodoList from '../containers/VisibleTodoList'
 import UndoRedo from '../containers/UndoRedo'
 
 const App = () => (
-  <div>
+  <div className="container mt-3">
     <AddTodo />
     <VisibleTodoList />
     <Footer />

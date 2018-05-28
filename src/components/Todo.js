@@ -3,10 +3,8 @@ import PropTypes from 'prop-types'
 
 const Todo = ({ onClick, completed, text }) => (
   <li
+    className={['list-group-item', ...(completed ? ['active'] : [])].join(' ')}
     onClick={onClick}
-    style={{
-      textDecoration: completed ? 'line-through' : 'none'
-    }}
   >
     {text}
   </li>
